@@ -1,9 +1,9 @@
 package main
 
-const name string = "jacky"
+import "fmt"
 
 func main() {
-	nanme := "jack"
-	age := 12
-
+	x := 4039402344
+	xAsBinary := fmt.Sprintf("%b\n", x)
+	fmt.Println(x, xAsBinary)
 }

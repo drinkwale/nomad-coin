@@ -1,7 +1,9 @@
 package main
 
-import "fmt"
+const name string = "jacky"
 
 func main() {
-	fmt.Println("Hello")
+	nanme := "jack"
+	age := 12
+
 }

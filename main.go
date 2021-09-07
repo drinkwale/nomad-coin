@@ -1,17 +1,13 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
 
-type person struct {
-	name string
-	age  int
-}
-
-func (p person) sayHello() {
-	fmt.Printf("Hello! My name is %s and I'm %d", p.name, p.age)
-}
+	"github.com/drinkwale/nomad-coin/person"
+)
 
 func main() {
-	jack := person{"jack", 34}
-	jack.sayHello()
+	jack := person.Person{}
+	jack.SetDetails("jack", 34)
+	fmt.Println("Main's jack : ", jack)
 }

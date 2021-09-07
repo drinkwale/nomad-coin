@@ -2,11 +2,16 @@ package main
 
 import "fmt"
 
+type person struct {
+	name string
+	age  int
+}
+
+func (p person) sayHello() {
+	fmt.Printf("Hello! My name is %s and I'm %d", p.name, p.age)
+}
+
 func main() {
-	a := 2
-	b := &a
-	a = 50
-	a = 12
-	a = 12312398
-	fmt.Println(*b)
+	jack := person{"jack", 34}
+	jack.sayHello()
 }
